@@ -56,6 +56,9 @@ const CardCountries = ({ API_URL }) => {
 
 const CardSection = styled.section`
    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)) !important;
+   @media (max-width: 460px) {
+      padding-inline: 1.8rem;
+   }
 `;
 
 export default CardCountries;

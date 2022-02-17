@@ -1,18 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
-import useLocalStorage from '../hooks/useLocalStorage';
 import LoadSpinner from './LoadSpinner';
 import ErrorMessage from './ErrorMessage';
 
 const SingleCard = ({ API_URL, resetQuery, setApiParam }) => {
    const [data, error, isLoading] = useFetch(API_URL);
-
-   // bug here 
-   const borderList = data.map(country => [country.alpha3Code, country.name]),
-         [borderMap, setborderMap] = useLocalStorage('borderMap', Object.fromEntries(borderList));
-
-         
    return(
       <>
          {isLoading ?
@@ -63,6 +56,7 @@ const DivCard = styled.div`
       padding-bottom: 2rem;
    }
    h2 {
+      font-size: 1.35rem;
       margin-bottom: .8rem;
    }
 `;

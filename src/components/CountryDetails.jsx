@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import useFetch from '../hooks/useFetch';
 
-const CountryDetails = ({data}) => {
+const CountryDetails = ({data, API_URL}) => {
    const joinObjData = objData => {
       let str = [];
       if(objData) objData.forEach(obj => str.push(obj.name));
@@ -9,7 +10,9 @@ const CountryDetails = ({data}) => {
    };
    const langs = joinObjData(data.languages),
          currencies = joinObjData(data.currencies),
-         borderMap = JSON.parse(localStorage.borderMap);
+         borderList =  data.borders?.map(border => border).join();
+
+   const [dataBorder, errorBorder, isLoadingBorder] = useFetch(`${API_URL}alpha?codes=${borderList}`);
 
    return(
       <>
@@ -36,13 +39,16 @@ const CountryDetails = ({data}) => {
             <DivBorders>
                <p><strong>Border Countries:</strong></p>
                <ul>
-                  {data.borders !== undefined ?
-                     data.borders?.map(border =>
-                        <li key={border}>
-                           <Link to={`/${border}`}>{borderMap[border]}</Link>
-                        </li>
-                     ) :
+                  {isLoadingBorder ?
+                     <li>Loading...</li>
+                     : errorBorder ?
                      <li>No Countries</li>
+                        :
+                        dataBorder.map(country => 
+                           <li key={country.alpha3Code}>
+                              <Link to={`/${country.alpha3Code}`}>{country.name}</Link>
+                           </li>
+                        )
                   }
                </ul>
             </DivBorders>
@@ -64,7 +70,10 @@ const DivUlInfo = styled.div`
    ul {
       width: 50%;
       @media (max-width: 460px) {
-         width: 100%; 
+         width: 100%;
+      }
+      li {
+         padding-bottom: .8rem;
       }
    }
 `;
@@ -80,7 +89,7 @@ const DivBorders = styled.div`
       flex-direction: row;
       flex-wrap: wrap;
       gap: .8rem;
-      max-width: 22vw;
+      max-width: calc(100% - 10rem);
       padding-left: .8rem;
       @media (max-width: 460px) {
          max-width: 100%;

@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
       --bg: ${({ theme }) => theme.bg};
       --ele: ${({ theme }) => theme.ele};
       --text: ${({ theme }) => theme.text};
-      --shadow: 'rgba(0,0,0, .5';
+      --shadow: rgba(0,0,0,.4);
    }
 `;
 

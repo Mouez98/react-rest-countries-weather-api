@@ -1,12 +1,15 @@
 # React REST Countries & Weather API with color theme switcher
 
+![REST Countries API](./screenshot.webp)
+
 This is my evolved and most complex solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
+
+This application gives some information about all countries in the world, such us country data, weather and map. 
 
 ## Table of contents
 
 - [Overview](#overview)
   - [About App](#about-app)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -36,17 +39,13 @@ This application gives some information about all countries in the world:
 Additional features: 
 
 - See current country weather data on detail page through API
+  ![REST Countries Details page](./screenshot-details.webp)
 - See the Map of the country on the details page
 - Button scroll to top after the scrool
 - Button for query reset when typing on the search input
 - Error page with animated svg when no results found
+  ![REST Countries Error page](./screenshot-error.webp)
 - LocalStorage save of the set light or dark mode theme 
-
-### Screenshot
-
-![REST Countries API](./screenshot.webp)
-![REST Countries Details page](./screenshot-details.webp)
-![REST Countries Error page](./screenshot-error.webp)
 
 ### Links
 

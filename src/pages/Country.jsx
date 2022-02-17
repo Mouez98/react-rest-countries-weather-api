@@ -27,7 +27,7 @@ const Country = ({ API_URL }) => {
             <ErrorMessage />
                :
                <section>
-                  <CountryDetails data={data} />
+                  <CountryDetails data={data} API_URL={API_URL} />
                   <CountryWeather
                      latCountry={latCountry}
                      lonCountry={lonCountry}
