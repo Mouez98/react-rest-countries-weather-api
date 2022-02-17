@@ -1,6 +1,6 @@
 {
-  "name": "rest-countries-api",
-  "homepage": "https://denielden.github.io/react-rest-countries-weather-api",
+  "name": "react-rest-countries-weather-api",
+  "homepage": "https://denielden.github.io/react-rest-countries-weather-api/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
