@@ -21,7 +21,7 @@ const SingleCard = ({ API_URL, resetQuery, setApiParam }) => {
                         </Link>
                         <div>
                            <Link to={`/${country.alpha3Code}`}>
-                              <h1>{country.name}</h1>
+                              <h2>{country.name}</h2>
                            </Link>
                            <ul>
                               <li><strong>Population:</strong> {country.population.toLocaleString()}</li>
@@ -55,7 +55,7 @@ const DivCard = styled.div`
       padding: 1.5rem;
       padding-bottom: 2rem;
    }
-   h1 {
+   h2 {
       font-size: 1.35rem;
       margin-bottom: .8rem;
    }
