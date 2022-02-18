@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-rest-countries-weather-api/static/css/main.26c72622.css",
-    "main.js": "/react-rest-countries-weather-api/static/js/main.7a6b389d.js",
-    "static/js/787.e93716af.chunk.js": "/react-rest-countries-weather-api/static/js/787.e93716af.chunk.js",
+    "main.js": "/react-rest-countries-weather-api/static/js/main.fa2c6b09.js",
+    "static/js/787.2904f89b.chunk.js": "/react-rest-countries-weather-api/static/js/787.2904f89b.chunk.js",
     "static/media/space.svg": "/react-rest-countries-weather-api/static/media/space.8589f15f7a7c38218442a5b148fefe58.svg",
     "index.html": "/react-rest-countries-weather-api/index.html",
     "main.26c72622.css.map": "/react-rest-countries-weather-api/static/css/main.26c72622.css.map",
-    "main.7a6b389d.js.map": "/react-rest-countries-weather-api/static/js/main.7a6b389d.js.map",
-    "787.e93716af.chunk.js.map": "/react-rest-countries-weather-api/static/js/787.e93716af.chunk.js.map"
+    "main.fa2c6b09.js.map": "/react-rest-countries-weather-api/static/js/main.fa2c6b09.js.map",
+    "787.2904f89b.chunk.js.map": "/react-rest-countries-weather-api/static/js/787.2904f89b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26c72622.css",
-    "static/js/main.7a6b389d.js"
+    "static/js/main.fa2c6b09.js"
   ]
 }
