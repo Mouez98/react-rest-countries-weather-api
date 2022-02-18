@@ -3,9 +3,10 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme, GlobalStyles } from './theme';
 import { Routes, Route } from 'react-router-dom';
 import useLocalStorage from './hooks/useLocalStorage';
+import Header from './components/Header';
 import CardCountries from './pages/CardCountries';
 import Country from './pages/Country';
-import Header from './components/Header';
+import ErrorMessage from './components/ErrorMessage';
 import ScrollToTop from './components/ScrollToTop';
 
 
@@ -24,6 +25,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<CardCountries API_URL={API_URL} />} />
 					<Route path="/:code" element={<Country API_URL={API_URL} />} />
+					<Route path="/*" element={<ErrorMessage />} />
 				</Routes>
 			</main>
 			<ScrollToTop />
