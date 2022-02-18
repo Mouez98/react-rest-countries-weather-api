@@ -12,6 +12,7 @@ const InputSearch = ({ query, handleQuery, handleRunQuery, handleResetQuery }) =
             onChange={handleQuery}
             onKeyPress={handleRunQuery}
             placeholder="Search for a country..."
+            aria-label="search-country"
          />
          {query.length > 0 &&
             <button id="reset" onClick={handleResetQuery}>x</button>
