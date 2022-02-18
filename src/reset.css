@@ -47,7 +47,7 @@ html {
 	font-size: .8rem;
 	text-align: left;
 	z-index: 999;
-	box-shadow: 0 0 .4rem var(--shadow);
+	box-shadow: 0 0 .3rem var(--shadow);
 	transform: rotateX(90deg);
 	transition: .8s cubic-bezier(.06, .8, .1, 1);
 }

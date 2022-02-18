@@ -7,7 +7,7 @@ body {
 header {
 	background-color: var(--ele);
    padding: 1rem 0;
-	box-shadow: 0 0 .4rem var(--shadow);
+	box-shadow: 0 0 .3rem var(--shadow);
 }
 @media screen and (max-width: 800px) {
 	header {

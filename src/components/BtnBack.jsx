@@ -20,7 +20,7 @@ const BackButton = styled.button`
    font-size: 1.1rem;
    background-color: var(--ele);
    color: var(--txt);
-	box-shadow: 0 0 .5rem var(--shadow);
+	box-shadow: 0 0 .4rem var(--shadow);
    svg {
       width: 1.2rem;
       position: relative;

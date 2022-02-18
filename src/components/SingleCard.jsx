@@ -41,7 +41,7 @@ const DivCard = styled.div`
    max-width: 32rem;
    border-radius: .5rem;
    background-color: var(--ele);
-	box-shadow: 0 0 .3rem var(--shadow);
+	box-shadow: 0 0 .2rem var(--shadow);
    overflow: hidden;
    transition: .4s ease-out;
    &:hover {

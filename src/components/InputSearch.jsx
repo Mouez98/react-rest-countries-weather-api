@@ -53,7 +53,7 @@ const Input = styled.input`
 	border-radius: .3rem;
    background-color:var(--ele);
    color: var(--text);
-	box-shadow: 0 0 .3rem var(--shadow);
+	box-shadow: 0 0 .2rem var(--shadow);
    @media (max-width: 460px) {
       min-width: 92vw;
       padding-left: 5rem;
