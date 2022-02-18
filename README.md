@@ -2,6 +2,8 @@
 
 ![REST Countries API](./screenshot.webp)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/67f7241c-7363-475a-a9e6-36e8934f1d17/deploy-status)](https://app.netlify.com/sites/denielden-react-countries-weather/deploys)
+
 This is my evolved and most complex solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
 
 This application gives some information about all countries in the world, such us country data, weather and map. 
@@ -50,7 +52,7 @@ Additional features:
 ### Links
 
 - Solution URL: [github](https://github.com/denielden/react-rest-countries-weather-api)
-- Live Site URL: [live site](https://denielden.github.io/react-rest-countries-weather-api)
+- Live Site URL: [live site](https://denielden-react-countries-weather.netlify.app)
 
 ## My process
 
