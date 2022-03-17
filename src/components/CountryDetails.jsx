@@ -30,8 +30,8 @@ const CountryDetails = ({data, API_URL}) => {
                </ul>
 
                <ul>
-                  <li><strong>Top Level Domain:</strong> {data.topLevelDomain}</li>                     
-                  <li><strong>Currencies:</strong> {currencies}</li>
+                  <li><strong>Top Level Domain:</strong> {data.topLevelDomain[0] !== "" ? data.topLevelDomain : 'None'}</li>
+                  <li><strong>Currencies:</strong> {currencies !== '' ? currencies : 'No Currencies'}</li> 
                   <li><strong>Languages:</strong> {langs}</li>
                </ul>
             </DivUlInfo>
@@ -42,7 +42,7 @@ const CountryDetails = ({data, API_URL}) => {
                   {isLoadingBorder ?
                      <li>Loading...</li>
                      : errorBorder ?
-                     <li>No Countries</li>
+                     <NoBorderLi>No Countries</NoBorderLi>
                         :
                         dataBorder.map(country => 
                            <li key={country.alpha3Code}>
@@ -103,6 +103,11 @@ const DivBorders = styled.div`
       border-radius: .3rem;
       box-shadow: 0 0 .3rem var(--shadow);
    }
+`;
+const NoBorderLi = styled.li`
+   padding-inline: 0 !important;
+   background: transparent !important;
+   box-shadow: none !important;
 `;
 
 export default CountryDetails;
