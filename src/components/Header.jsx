@@ -32,6 +32,7 @@ const ThemeButton = styled.button`
    color: var(--text);
    font-size: 1.25rem;
    font-weight: 400;
+   cursor: pointer;
    @media (max-width: 1080px) {
       font-size: 1rem;
    }

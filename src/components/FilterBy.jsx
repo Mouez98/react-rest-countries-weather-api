@@ -21,6 +21,7 @@ const SelectFilter = styled.select`
    background-color:var(--ele);
    color: var(--text);
 	box-shadow: 0 0 .2rem var(--shadow);
+   cursor: pointer;
    @media (max-width: 460px) {
       min-width: 56vw;
    }
